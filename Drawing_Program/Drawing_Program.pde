@@ -5,6 +5,7 @@ Boolean draw=false;
 void setup() {
   size (500, 600); //fullScreen(), dispayWidth, displayHeight
   population();
+  quitButtonSetup();
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
 }//End setup()
@@ -17,6 +18,9 @@ void draw() {
 }//End draw()
 
 void mousePressed() {
+  //
+  quitButtonMousePressed();
+  //
   if ( mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight )
   {
     if (draw == false)
@@ -26,6 +30,7 @@ void mousePressed() {
       draw = false;
     }//End draw boolean
   }//End line draw
+  
 }//End mousePressed()
 
 void keyPressed() {
