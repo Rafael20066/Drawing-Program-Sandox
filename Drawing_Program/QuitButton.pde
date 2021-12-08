@@ -15,7 +15,7 @@ void quitButtonSetup()
 void quitButtonDraw()
 {
   //Quit Button Hover Over
-  if () {
+  if (mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
     quitButtonColour = red;
   } else {
     quitButtonColour = black;
